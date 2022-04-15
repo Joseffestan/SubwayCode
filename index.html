@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>湖北健康码</title>
+	<style>
+		body{background-image: url("empty.jpg");
+			background-repeat: no-repeat;
+			background-size:100% ;
+			padding-bottom: 150%
+			
+			}		
+    </style>
+
+</head>
+
+<script>
+	setInterval("fun(show_time)",0.11);
+	function fun(timeID){ 
+		var date = new Date();  //创建对象  
+		var y = date.getFullYear();     //获取年份  
+		var m =date.getMonth()+1;   //获取月份  返回0-11  
+		var d = date.getDate(); // 获取日  
+		var w = date.getDay();   //获取星期几  返回0-6   (0=星期天) 
+		var ww = ' 星期'+'日一二三四五六'.charAt(new Date().getDay()) ;//星期几
+		var h = date.getHours();  //时
+		var minute = date.getMinutes()  //分
+		var s = date.getSeconds(); //秒
+		var sss = date.getMilliseconds() ; //毫秒
+		if(m<10){
+			m = "0"+m;
+		}
+		if(d<10){
+			d = "0"+d;
+		}
+		if(h<10){
+			h = "0"+h;
+		}
+			
+		if(minute<10){
+			minute = "0"+minute;
+		}
+				
+		if(s<10){
+			s = "0"+s;
+		}
+				
+		sss =sss/10;
+		sss = Math.floor(sss);
+		
+		document.getElementById(timeID.id).innerHTML 
+			= " "+y+"-"+m+"-"+d+"   "+h+":"+minute+":"+s; 
+}
+setInterval("fun2(show_time2)",0.11);
+	function fun2(timeID2){ 
+		var date = new Date();  //创建对象  
+		var y = date.getFullYear();     //获取年份  
+		var m =date.getMonth()+1;   //获取月份  返回0-11  
+		var d = date.getDate(); // 获取日  
+		var w = date.getDay();   //获取星期几  返回0-6   (0=星期天) 
+		var ww = ' 星期'+'日一二三四五六'.charAt(new Date().getDay()) ;//星期几
+		var h = date.getHours();  //时
+		var minute = date.getMinutes()  //分
+		var s = date.getSeconds(); //秒
+		var sss = date.getMilliseconds() ; //毫秒
+		if(m<10){
+			m = "0"+m;
+		}
+		if(d<10){
+			d = "0"+d;
+		}
+		if(h<10){
+			h = "0"+h;
+		}
+			
+		if(minute<10){
+			minute = "0"+minute;
+		}
+				
+		if(s<10){
+			s = "0"+s;
+		}
+				
+		sss =sss/10;
+		sss = Math.floor(sss);
+		
+		document.getElementById(timeID2.id).innerHTML 
+			= " "+y+"-"+m+"-"+d; 
+}
+setInterval("fun3(show_time3)",0.11);
+	function fun3(timeID3){ 
+		var date = new Date();  //创建对象  
+		var y = date.getFullYear();     //获取年份  
+		var m =date.getMonth()+1;   //获取月份  返回0-11  
+		var d = date.getDate()-1; // 获取日  
+		var w = date.getDay();   //获取星期几  返回0-6   (0=星期天) 
+		var ww = ' 星期'+'日一二三四五六'.charAt(new Date().getDay()) ;//星期几
+		var h = date.getHours();  //时
+		var minute = date.getMinutes()  //分
+		var s = date.getSeconds(); //秒
+		var sss = date.getMilliseconds() ; //毫秒
+		if(m<10){
+			m = "0"+m;
+		}
+		if(d<10){
+			d = "0"+d;
+		}
+		if(h<10){
+			h = "0"+h;
+		}
+			
+		if(minute<10){
+			minute = "0"+minute;
+		}
+				
+		if(s<10){
+			s = "0"+s;
+		}
+				
+		sss =sss/10;
+		sss = Math.floor(sss);
+		
+		document.getElementById(timeID3.id).innerHTML 
+			= " "+y+"-"+m+"-"+d; 
+}
+</script>
+<style>
+	.container{
+		margin-top: 48%;
+		margin-left: 22%;
+		text-align: left;
+		color:black;
+		font-size: 70px;
+		
+		font-family:italic;
+		}
+		.container2{
+		margin-top: 59%;
+		margin-left: 54%;
+		text-align: left;
+		color:rgb(63, 133, 68);
+		font-size: 50px;
+		font:italic;			
+		}
+		.container3{
+		margin-top: 40.5%;
+		margin-left: 18%;
+		text-align: left;
+		color:rgb(217, 241, 216);
+		font-size: 32px;
+		font:italic;			
+		}
+		
+
+</style>
+<body >
+<div class="container" id="time">
+	
+	<span id= "show_time">here is time</span>
+	
+</div>
+<div class="container2" id="time2">
+	
+	<span id= "show_time2">here is time</span>
+	
+</div>
+<div class="container3" id="time3">
+	
+	<span id= "show_time3">here is time</span>
+	
+</div>
+</body>
+</html>
