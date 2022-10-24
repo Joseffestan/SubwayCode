@@ -49,7 +49,7 @@
 		sss = Math.floor(sss);
 		
 		document.getElementById(timeID.id).innerHTML 
-			= " "+y+"-"+m+"-"+d+"   "+h+":"+minute+":"+s; 
+			= " "+y+"-"+m+"-"+d; 
 }
 setInterval("fun2(show_time2)",0.11);
 	function fun2(timeID2){ 
@@ -85,7 +85,7 @@ setInterval("fun2(show_time2)",0.11);
 		sss = Math.floor(sss);
 		
 		document.getElementById(timeID2.id).innerHTML 
-			= " "+y+"-"+m+"-"+d; 
+			= " "+y+"-"+m+"-"+d+"   "+h+":"+minute+":"+s; 
 }
 </script>
 <style>
@@ -93,7 +93,7 @@ setInterval("fun2(show_time2)",0.11);
 		margin-top: 76%;
 		margin-left: 23%;
 		text-align: left;
-		color:yellow;
+		color:black;
 		font-size: 51px;
 		
 		font-family:italic;
@@ -102,7 +102,7 @@ setInterval("fun2(show_time2)",0.11);
 		margin-top: 50%;
 		margin-left: 16%;
 		text-align: left;
-		color:blue;
+		color:yellow;
 		font-size: 40px;
 		font:italic;			
 		}
@@ -110,12 +110,12 @@ setInterval("fun2(show_time2)",0.11);
 
 </style>
 <body >
-<div class="container2" id="time2">
+<div class="container" id="time">
 	
 	<span id= "show_time">here is time</span>
 	
 </div>
-<div class="container" id="time">
+<div class="container2" id="time2">
 	
 	<span id= "show_time2">here is time</span>
 	
