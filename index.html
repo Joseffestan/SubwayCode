@@ -99,27 +99,40 @@ setInterval("fun2(show_time2)",0.11);
 		font-family:italic;
 		}
 	.container2{
-		margin-top: 30%;
+		margin-top: 18%;
+		margin-left: 17%;
+		text-align: left;
+		font-size: 45px;
+		font:italic;			
+		}
+	.container3{
+		margin-top: 5%;
 		margin-left: 27%;
 		text-align: left;
 		color:black;
 		font-size: 45px;
 		font:italic;			
 		}
-		
 
 </style>
+
+<style type="text/css">
+p input{
+	width:400px;
+	height:60px;
+}
+</style>
+
 <body >
 <div class="container" id="time">
-	
 	<span id= "show_time">here is time</span>
-	
 </div>
-<input type="text" id="name" name="name" required minlength="1" maxlength="5" size="10">
-<div class="container2" id="time2">
-	
+<div class="container2">
+	<input type="text" id="name" name="name" required minlength="2" maxlength="5" size="10" value="广埠屯站"
+		style="font-size:80px;width:600px; height:81px;text-align:center;border:none;">
+</div>
+<div class="container3" id="time2">
 	<span id= "show_time2">here is time</span>
-	
 </div>
 </div>
 </body>
